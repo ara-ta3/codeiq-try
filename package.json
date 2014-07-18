@@ -1,0 +1,26 @@
+{
+  "name": "codeiq-workspace",
+  "version": "0.0.0",
+  "description": "codeiqのjsダンジョン用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tarata/codeiq-try.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarata/codeiq-try/issues"
+  },
+  "homepage": "https://github.com/tarata/codeiq-try",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-qunit": "^0.5.2",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
