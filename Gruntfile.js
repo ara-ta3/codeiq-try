@@ -3,7 +3,7 @@ module.exports = function(grunt){
     grunt.initConfig({
         watch: {
             scripts: {
-                files: ['src/codeiq/answer.js'],
+                files: ['src/codeiq/*.js'],
                 tasks: ['uglify']
             }
         },
@@ -13,6 +13,9 @@ module.exports = function(grunt){
                     'dest/output/codeiq-answer.txt': ['src/codeiq/answer.js']
                 }
             }
+        },
+        qunit: {
+            all: ['test/codeiq/*.html']
         }
     });
 
@@ -20,5 +23,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-qunit');
 
+
     grunt.registerTask('default', ['watch']);
+    grunt.registerTask('test', ['qunit']);
 };
